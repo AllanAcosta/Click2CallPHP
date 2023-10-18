@@ -37,7 +37,7 @@ class DialController
 
         if ($length == 7 && is_numeric($strExten)) {
 
-            $oSocket = fsockopen($strHost, 8999, $errnum, $errdesc) or die("Connection to host failed");
+            $oSocket = fsockopen($strHost, 'integer', $errnum, $errdesc) or die("Connection to host failed");
             
             if ($oSocket == true) {
                 /*
